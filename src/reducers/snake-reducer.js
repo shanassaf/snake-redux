@@ -1,6 +1,7 @@
 import { BOARD_WIDTH, BOARD_HEIGHT, INITIAL_DIRECTION } from "../constants";
 
 const INITIAL_STATE = {
+	colour: "blue",
 	direction: INITIAL_DIRECTION,
 	coords: [
 		[Math.floor(BOARD_WIDTH / 2), 0],

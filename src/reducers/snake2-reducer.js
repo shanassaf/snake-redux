@@ -1,6 +1,7 @@
 import { BOARD_WIDTH, BOARD_HEIGHT, INITIAL_DIRECTION } from "../constants";
 
 const INITIAL_STATE2 = {
+	colour: "orange",
 	direction2: INITIAL_DIRECTION,
 	coords: [
 		[Math.floor(BOARD_WIDTH / 4), 0],
@@ -26,7 +27,7 @@ export default function(state = INITIAL_STATE2, action) {
 		case "PREPEND_SNAKE_2":
 			return {
 				...state,
-				coords: [[action.coords], ...state.coord],
+				coords: [[action.coords], ...state.coords],
 			};
 
 		case "NEW_GAME":

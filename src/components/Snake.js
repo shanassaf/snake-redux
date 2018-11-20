@@ -8,7 +8,7 @@ export default function(props) {
 				const style = {
 					left: coords[0] * SQUARE_SIZE + "px",
 					top: coords[1] * SQUARE_SIZE + "px",
-					background: props.lost ? "red" : "",
+					background: props.lost ? "red" : props.snakeColour,
 				};
 				return <div className="snake" style={style} key={index} />;
 			})}

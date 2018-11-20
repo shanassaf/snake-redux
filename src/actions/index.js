@@ -55,9 +55,16 @@ export function setDirection2(direction2) {
 	};
 }
 
-export function prependSnake(coords) {
+export function prependSnake1(coords) {
 	return {
 		type: "PREPEND_SNAKE_1",
+		coords: coords,
+	};
+}
+
+export function prependSnake2(coords) {
+	return {
+		type: "PREPEND_SNAKE_2",
 		coords: coords,
 	};
 }
@@ -74,8 +81,14 @@ export function loseGame() {
 	};
 }
 
-export function incrementScore() {
+export function incrementScore1() {
 	return {
 		type: "INCREMENT_SCORE_1",
+	};
+}
+
+export function incrementScore2() {
+	return {
+		type: "INCREMENT_SCORE_2",
 	};
 }
